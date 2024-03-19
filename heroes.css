@@ -6,6 +6,9 @@
   box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
 
+html, body{
+  min-height:100%;
+}
 
 .input-group-text:focus-within,
 .form-control:focus {
@@ -46,4 +49,10 @@
 
 .input-group-text, .p-3 {
   color: #388e3c;
+  min-width: 123px !important;
+  /* padding:0% !important; */
+}
+
+.footer{
+  background-color: #388e3c;
 }
