@@ -39,3 +39,11 @@
   color: #388e3c !important;
   border-color: #fff !important;
 }
+
+.form-control{
+  border-left: none !important;
+}
+
+.input-group-text, .p-3 {
+  color: #388e3c;
+}
