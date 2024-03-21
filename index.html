@@ -58,7 +58,10 @@
   </main>
   <script>
     document.getElementById("claimButton").addEventListener("click", function() {
-      window.location.href = "https://api.whatsapp.com/send?phone=918593973187&text=Hey%20please%20claim%20my%20name";
+      var inputText = document.getElementById("basic-url").value;
+      var message = "Hey please claim my name: " + inputText;
+      var whatsappLink = "https://api.whatsapp.com/send?phone=918593973187&text=" + encodeURIComponent(message);
+      window.location.href = whatsappLink;
     });
   </script>
 
