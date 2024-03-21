@@ -47,7 +47,7 @@
         <div class="mb-3 input-group">
           <span class="input-group-text p-3" id="basic-addon3">mymeet.link/</span>
           <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
-          <button href="https://api.whatsapp.com/send?phone=918593973187&text=Hey%20please%20claim%20my%20name" class="btn btn-primary" type="button" id="button-addon2">Claim now</button>
+          <button id="claimButton" class="btn btn-primary" type="button" id="button-addon2">Claim now</button>
         </div>
         
         <div class="display-8" id="basic-addon4"><span class="fw-bold">Free forever</span> until we have 100
@@ -56,6 +56,11 @@
       </div>
     </div>
   </main>
+  <script>
+    document.getElementById("claimButton").addEventListener("click", function() {
+      window.location.href = "https://api.whatsapp.com/send?phone=918593973187&text=Hey%20please%20claim%20my%20name";
+    });
+  </script>
 
   <footer class="footer mt-auto py-3">
     <div class="container">
